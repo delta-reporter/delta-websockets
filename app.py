@@ -12,8 +12,7 @@ from flask_socketio import SocketIO
 app = Flask(__name__)
 
 # # See http://flask.pocoo.org/docs/latest/config/
-app.config.update(dict(FLASK_ENV=os.environ.get("FLASK_ENV", "production")))
-# app.config.update(config or {})
+app.config.from_object(os.environ["APP_SETTINGS"])
 
 # Setup cors headers to allow all domains
 # https://flask-cors.readthedocs.io/en/latest/

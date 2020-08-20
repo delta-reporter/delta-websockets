@@ -2,6 +2,6 @@
 
 export PORT=8080
 export HOST=localhost
-export FLASK_ENV=development
+export APP_SETTINGS=config.DevelopmentConfig
 
-python3 app.py
+python app.py
