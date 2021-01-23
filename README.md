@@ -2,6 +2,8 @@
 
 This service is intended to send real time events into Delta Reporter
 
+> :warning:  **Repository archived**: Delta Reporter uses SWR interval polling as replacement for websockets
+
 ## Local development
 
 To develop locally, create a virtual environment and install your dependencies:
